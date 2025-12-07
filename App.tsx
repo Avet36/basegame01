@@ -183,7 +183,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="h-[100dvh] w-full relative flex flex-col items-center justify-between overflow-hidden font-sans bg-gray-900 selection:bg-pink-500 selection:text-white pt-2 pb-2 md:pt-6 md:pb-6">
+    <div 
+      className="h-[100dvh] w-full relative flex flex-col items-center justify-between overflow-hidden font-sans bg-gray-900 selection:bg-pink-500 selection:text-white pt-2 pb-2 md:pt-6 md:pb-6"
+      style={{
+        paddingTop: 'calc(0.5rem + env(safe-area-inset-top))',
+        paddingBottom: 'calc(0.5rem + env(safe-area-inset-bottom))'
+      }}
+    >
       
       {/* Dynamic Background */}
       <div className="fixed inset-0 w-full h-full pointer-events-none">
